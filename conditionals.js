@@ -1,12 +1,22 @@
-const READLINE = require("readline-sync");
+let READLINE = require("readline-sync");
 
 // **** Problem 1: R-rated ****
 // You cannot see an R-rated movie unless you are at least 18, or you are with
 // an adult. Write code that prints whether or not someone can see an
 // R-rated movie.
+
 console.log("*** Problem 1: R-rated ***");
 let age = READLINE.question("Enter your age: ");
-let withAdult = READLINE.question("Are you with an adult? (yes or no): ");
+let withAdult = false; //assign a boolean
+
+if (age >= 18 || withAdult){
+
+	console.log("Watch movie")
+
+}else{
+
+	console.log("You need an adult.")
+}
 
 
 // **** Problem 2: Umbrella ****
@@ -18,6 +28,15 @@ console.log("*** Problem 2: Umbrella ***");
 let raining = READLINE.question("Is it raining? (yes or no): ");
 let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
 
+if (raining=="yes" && thunderstorming=="no"){
+
+console.log("Bring an umbrella.");
+
+}else{
+
+	console.log("Don't bring an umbrella.")
+}
+
 
 // **** Problem 3: Monkey Trouble ****
 // There are two monkeys: Bubbles and Spankey. You are in trouble if both of
@@ -27,7 +46,16 @@ console.log("*** Problem 3: Monkey Trouble ***");
 let bubbles = READLINE.question("Is Bubbles smiling? (yes or no): ");
 let spankey = READLINE.question("Is Spankey smiling? (yes or no): ");
 
+if ((bubbles=="yes" && spankey=="yes") || (bubbles=="no" && spankey=="no")){
 
+console.log("You're in trouble");
+
+} 
+
+else{
+
+	console.log("You aren't in trouble.");
+}
 // **** Problem 4: First Place ****
 // Write code that prints the largest of three scores. If there is a tie for
 // first place, simply print one of the tie winners.
@@ -35,6 +63,13 @@ console.log("*** Problem 4: First Place ***");
 let score1 = READLINE.question("Enter the first score: ");
 let score2 = READLINE.question("Enter the second score: ");
 let score3 = READLINE.question("Enter the third score: ");
+
+if (score1 >= score2 && score1 >= score3){
+
+console.log("score1 is the biggest: "  + score1)
+
+}
+
 
 
 // **** Problem 5: Phone Shopping ****
