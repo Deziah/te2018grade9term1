@@ -19,12 +19,12 @@ console.log(`${player.name} hears what sounds like screaming coming from inside 
 let enterHouse = READLINE.question("Will you enter the house? (yes or no) ");
 if(enterHouse == "y" || enterHouse == "yes") {
   player.courage++;
-  console.log(`${player.name} prepares their ${player.weapon} and opens the door...`);
+  console.log(`${player.name} prepares their ${player.weapon} and opens the door. He looks around for whoever is screaming.)`);
   // continue the story
 
 } else {
   player.intellect++;
-  console.log(`${player.name} decides not to open the door. However...`);
+  console.log(`${player.name} decides not to open the door. However he's forved to.);
   // continue the story
 
 }
