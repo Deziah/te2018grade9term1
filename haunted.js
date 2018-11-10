@@ -59,6 +59,19 @@ let continue = READLINE.question("Do you want to continue?")
       if(continue == "y" || continue == "yes") {
         player.intellect++; 
         console.log(`${player.name} walks into a kitchen and sees a pitbull tied down to a counter stool.`)
+
+let seePitbull = READLINE.question("Do you want to pet it?")
+      
+      if(continue == "y" || continue == "yes"){
+      player.courage++;
+      console.log(`${player.name} gets bitten by the pitbull. She gets poisoned and instantly dies.`)
+      
+      }else{
+        player.intellect++;
+        console.log(`${player.name} runs from the pitbull and it starts to chase her. She looks back while running. She trips over her own feet, falls, hits her head and then bleeds to death.`)
+
+       }
+
       } else {
          player.intellect++;
          console.log(`${player.name} tries to walk back out the door, but is tripped and then is dragged to` +
