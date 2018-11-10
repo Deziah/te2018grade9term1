@@ -75,7 +75,7 @@ let seePitbull = READLINE.question("Do you want to pet it?")
       } else {
          player.intellect++;
          console.log(`${player.name} tries to walk back out the door, but is tripped and then is dragged to` +
-                    `the kitchen by her ankle. ${player.name} jumps up to see who was there, but when she gets up, nobody is in sight.`)
+                    `the kitchen by her ankle. ${player.name} struggles too much. She hits her head and bleeds to death.`)
       }
 
 }
