@@ -3,22 +3,45 @@ const READLINE = require("readline-sync");
 // use whatever properties you want for the player object
 let player = {
   name: undefined,
+  gender: undefined,
   courage: 0,
+  pronoun1: undefined,
+  pronoun2: undefined,
+  pronoun3: undefined,
   intellect: 0,
   strength: 0,
   charm: 0,
   item: "flashlight",
 };
 
+
 console.log();
 console.log("*** WELCOME TO THE HAUNTED HOUSE ***");
 player.name = READLINE.question("What is your name?: ");
+
+player.gender = READLINE.question("What is your gender?: ");
+
+if(player.gender == "boy"){
+
+let pronoun1 = "him";
+let pronoun2 = "his";
+let pronoun3 = "he";
+
+}else{
+
+  let pronoun1 = "her";
+  let pronoun2 = "hers";
+  let pronoun3 = "she";
+}
+
+
+
 console.log(`${player.name} stands in front of a spooky haunted house.`);
 console.log(`${player.name} hears what sounds like screaming coming from the inside of the house.`);
 let enterHouse = READLINE.question("Will you enter the house? (yes or no) ");
 if(enterHouse == "y" || enterHouse == "yes") {
   player.courage++;
-  console.log(`${player.name} prepares herself, and opens the door. A clown pops out and scares her.`+
+  console.log(`${player.name} prepares herself, and opens the door. A clown pops out and scares ${pronoun1}.`+
               "She continues walking until she walks into a dark and mysterious kitchen.");
 
 let enterKitchen = READLINE.question("Do you want to enter the kitchen?")
@@ -30,11 +53,11 @@ let pickKnife = READLINE.question("Do you want to get knife and go investigate?"
         if(pickKnife == "y" || pickKnife == "yes") {
           player.courage++;
           console.log(`when ${player.name} turns around, theres a trail of blood leading her around the corner.` +
-                     `when ${player.name} turns the corner, she meets a man who was waiting to let her face her death.`
+                     `when ${player.name} turns the corner, she meets a man who was waiting to let her face her death.`)
        
         }else {
           player.intellect++;
-          console.log(`${player.name} heared a strange voice coming from somewhere. It said "You are free to go. You have made a wise decision to mind you business. You are known as a noble player in the records of this game. Congratulations. You may leave now." `
+          console.log(`${player.name} heared a strange voice coming from somewhere. It said "You are free to go. You have made a wise decision to mind you business. You are known as a noble player in the records of this game. Congratulations. You may leave now." `)
 
         }
 
@@ -45,7 +68,7 @@ let pickKnife = READLINE.question("Do you want to get knife and go investigate?"
                     `${player.name} goes down the stairs and hear noise coming from around the corner.` +
                     `She turns around the corner and when she does she sees a beast who has awakened from her presence.` +
                     `The beast runs towards her. But then he stops and admires her beauty. He decides that he wants to spend the rest of his immortal life with her.`+
-                    `So he bites ${player.name}, turning her like him and someway, somehow, they live happily ever after.`
+                    `So he bites ${player.name}, turning her like him and someway, somehow, they live happily ever after.`)
       }
 
       } else {
@@ -54,15 +77,15 @@ let pickKnife = READLINE.question("Do you want to get knife and go investigate?"
                     "When past the door, there's a bright walkway on the left and right side of her."+
                     `${player.name} walks up to the card, picks it up and reads it. It said, 'Continue if you dare.`)
 
-let continue = READLINE.question("Do you want to continue?")
+let continueStory = READLINE.question("Do you want to continue?")
 
-      if(continue == "y" || continue == "yes") {
+      if(continueStory == "y" || continueStory == "yes") {
         player.intellect++; 
         console.log(`${player.name} walks into a kitchen and sees a pitbull tied down to a counter stool.`)
 
 let seePitbull = READLINE.question("Do you want to pet it?")
       
-      if(continue == "y" || continue == "yes"){
+      if(continueStory == "y" || continueStory == "yes"){
       player.courage++;
       console.log(`${player.name} gets bitten by the pitbull. She gets poisoned and instantly dies.`)
       
