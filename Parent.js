@@ -20,7 +20,7 @@ else {
 
 }
 
-let bath = READLINE.question("Did you take a shower? ");
+let bath = READLINE.question("Did you take a shower?");
 if(bath == "no") {
 	console.log("Go.");
 }

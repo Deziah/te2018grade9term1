@@ -41,7 +41,7 @@ console.log(`${player.name} hears what sounds like screaming coming from the ins
 let enterHouse = READLINE.question("Will you enter the house? (yes or no) ");
 if(enterHouse == "y" || enterHouse == "yes") {
   player.courage++;
-  console.log(`${player.name} prepares herself, and opens the door. A clown pops out and scares ${pronoun1}.`+
+  console.log(`${player.name} prepares herself, and opens the door. A clown pops out and scares ${person.pronoun1}.`+
               "She continues walking until she walks into a dark and mysterious kitchen.");
 
 let enterKitchen = READLINE.question("Do you want to enter the kitchen?")
