@@ -8,14 +8,13 @@ let player = {
   pronoun1: undefined,
   pronoun2: undefined,
   pronoun3: undefined,
+  
   intellect: 0,
   strength: 0,
   charm: 0,
   item: "flashlight",
 };
 
-
-console.log();
 console.log("*** WELCOME TO THE HAUNTED HOUSE ***");
 player.name = READLINE.question("What is your name?: ");
 
@@ -33,15 +32,14 @@ let pronoun3 = "he";
   let pronoun2 = "hers";
   let pronoun3 = "she";
 }
-
-
+ 
 
 console.log(`${player.name} stands in front of a spooky haunted house.`);
 console.log(`${player.name} hears what sounds like screaming coming from the inside of the house.`);
 let enterHouse = READLINE.question("Will you enter the house? (yes or no) ");
 if(enterHouse == "y" || enterHouse == "yes") {
   player.courage++;
-  console.log(`${player.name} prepares herself, and opens the door. A clown pops out and scares ${person.pronoun1}.`+
+  console.log(`${player.name} prepares herself, and opens the door. A clown pops out and scares ${player.pronoun1}.`+
               "She continues walking until she walks into a dark and mysterious kitchen.");
 
 let enterKitchen = READLINE.question("Do you want to enter the kitchen?")
