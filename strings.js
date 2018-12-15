@@ -8,13 +8,13 @@ withoutEnd("Hello") → "ell"
 withoutEnd("java") → "av"
 withoutEnd("coding") → "odin"
 *******************************************************************************/
-
-function withoutEnd(str) {
-
+/*let withoutEnd = function(str) {
+  let newStr = str.substring(1, str.length-1)
+  return(newStr)
 }
-
+console.log(withoutEnd("Hello"));
 // Remove comment below to test this function.
-//testWithoutEnd();
+testWithoutEnd();*/
 
 /******************************************************************************
                                    frontAgain()
@@ -28,12 +28,19 @@ frontAgain("ed") → true
 *******************************************************************************/
 
 
-function frontAgain(str) {
-
+/*function frontAgain(str) {
+if(str.charAt(0) && str.charAt(1) == str.charAt(str.length-1) && str.charAt(str.length-2)){
+  return(true)
+}
+else{
+  return(false)
+}
 }
 
+console.log(frontAgain("edited"));
+
 // Test this function.
-//testFrontAgain();
+testFrontAgain();*/
 
 /******************************************************************************
                                    deFront()
@@ -44,12 +51,28 @@ string length will be at least 2.
 Examples:
 deFront("Hello") → "llo"
 deFront("java") → "va"
-deFront("away") → "aay"
+deFront("away") → "aya"
 *******************************************************************************/
 
 function deFront(str) {
+ let newStr = ''
+
+ //str.substring(2, str.length)
+
+if(str.charAt(0) == "a"){
+
+newStr += "a"
 
 }
+
+if(str.charAt(1) == "b"){
+
+  newStr += "b"
+}
+
+ return(str)
+
+
 
 // Test this function.
 //testDeFront();

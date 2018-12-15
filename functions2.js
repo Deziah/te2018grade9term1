@@ -11,7 +11,15 @@ sumDouble(3, 2) → 5
 sumDouble(2, 2) → 8
 *******************************************************************************/
 
-
+/*let sumDouble= function(number1, number2){
+  if(number1==number2){
+    return(number1+number2) * 2
+  }
+  else{
+  return(number1+number2)
+}
+}
+console.log(sumDouble(3,9));*/
 
 // Remove comment below to test this function.
 //testSumDouble();
@@ -27,7 +35,14 @@ makes10(9, 9) → false
 makes10(1, 9) → true
 *******************************************************************************/
 
-
+let testDouble= function(a,b){
+  if((a==10) || (b==10) || (a+b==10)){
+    return(true)
+  }else{
+    return(false)
+  }
+}
+console.log(testDouble(9,10));
 
 // Remove comment below to test this function.
 //testMakes10();
@@ -46,7 +61,24 @@ parrotTrouble(true, 7) → false
 parrotTrouble(false, 6) → false
 *******************************************************************************/
 
+let parrotTrouble= function(talking, hour){
+  if(hour <7 || hour >20){
+    if(talking== true){
+      return(true)
+    }
 
+    else{
+      return(false)
+    }
+  }else{
+    return(false)
+  }
+  
+
+
+
+
+}
 
 // Remove comment below to test this function.
 //testParrotTrouble();
