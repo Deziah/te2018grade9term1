@@ -1,14 +1,13 @@
-const READLINE = require("readline-sync");
+const READLINE.question = require("readline-sync");
 
 // use whatever properties you want for the player object
 let player = {
   name: undefined,
   gender: undefined,
   courage: 0,
-  pronoun1: undefined,
+  /*pronoun1: undefined,
   pronoun2: undefined,
-  pronoun3: undefined,
-  
+  pronoun3: undefined,*/
   intellect: 0,
   strength: 0,
   charm: 0,
@@ -20,10 +19,9 @@ player.name = READLINE.question("What is your name?: ");
 
 player.gender = READLINE.question("What is your gender?: ");
 
-if(player.gender == "boy"){
+//if(player.gender == "boy"){
 
-let pronoun1 = "him";
-let pronoun2 = "his";
+/*let pronoun2 = "his";
 let pronoun3 = "he";
 
 }else{
@@ -31,7 +29,7 @@ let pronoun3 = "he";
   let pronoun1 = "her";
   let pronoun2 = "hers";
   let pronoun3 = "she";
-}
+}*/
  
 
 console.log(`${player.name} stands in front of a spooky haunted house.`);
